@@ -3,6 +3,7 @@ package com.example.computershop.controller;
 import com.example.computershop.enity.harddisks.HardDisks;
 import com.example.computershop.repository.HardDisksRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +13,7 @@ public class HardDisksController {
     @Autowired
     HardDisksRepository hardDisksRepository;
 
-    @RequestMapping("/create-hard")
+    @PostMapping("/create-hard")
     public HardDisks createHardDisks(){
         return hardDisksRepository.save(new HardDisks());
     }

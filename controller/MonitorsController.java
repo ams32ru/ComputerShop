@@ -3,6 +3,7 @@ package com.example.computershop.controller;
 import com.example.computershop.enity.monitors.Monitors;
 import com.example.computershop.repository.MonitorsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +13,7 @@ public class MonitorsController {
     @Autowired
     MonitorsRepository monitorsRepository;
 
-    @RequestMapping("/create-monitor")
+    @PostMapping("/create-monitor")
     public Monitors createMonitors() {
         return monitorsRepository.save(new Monitors());
     }
