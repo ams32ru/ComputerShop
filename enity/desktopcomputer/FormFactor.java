@@ -1,4 +1,4 @@
-package com.example.computershop.enity.desktopComputer;
+package com.example.computershop.enity.desktopcomputer;
 
 public enum FormFactor {
     DESKTOPS,
