@@ -18,12 +18,12 @@ public class HardDisksController {
     @Autowired
     HardDisksService hardDisksService;
 
-    @PostMapping("/create-computer")
+    @PostMapping("/create-hard-disks")
     public HardDisks createHardDisks() {
         return hardDisksService.createDesktopComputer();
     }
 
-    @PutMapping("/put-computer")
+    @PutMapping("/put-hard-disks")
     public ResponseEntity<HardDisks> setHardDisks(@RequestBody HardDisks hardDisks) {
         HardDisks foundHardDisks = hardDisksService.editComputer(hardDisks);
         if (foundHardDisks == null) {
@@ -32,7 +32,7 @@ public class HardDisksController {
         return ResponseEntity.ok(foundHardDisks);
     }
 
-    @GetMapping("/get-computer")
+    @GetMapping("/get-hard-disks")
     public ResponseEntity<HardDisks> getHardDisksById(@PathVariable long id) {
         HardDisks disk = hardDisksService.getHardDisksById(id);
         if (disk == null) {
@@ -41,7 +41,7 @@ public class HardDisksController {
         return ResponseEntity.ok(disk);
     }
 
-    @GetMapping("get-all-computers")
+    @GetMapping("get-all-hard-disks")
     public Collection<HardDisks> getAllHardDiskss() {
         return hardDisksService.getAllHardDisks();
     }
