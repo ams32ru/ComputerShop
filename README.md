@@ -22,4 +22,4 @@
 4. Далее java ComputerShopApplication для того что бы зупустить приложение
 
 
-Rest api доступно по адресу http//localhost:8080
+Rest api доступно по адресу [http//localhost:8080](http://localhost:8080/swagger-ui/index.html)
