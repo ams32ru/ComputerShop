@@ -1,17 +1,18 @@
-package com.example.computershop.enity.notebooks;
+package com.example.computershop.enity.harddisk;
 
 import com.example.computershop.enity.AbstractEntityProduct;
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "Notebooks")
+@Table(name = "Hard_disks")
 @Data
-public class Notebooks extends AbstractEntityProduct {
+public class HardDisks extends AbstractEntityProduct {
     @Id
     @GeneratedValue
     @Column(name = "id", nullable = false)
     private long id;
-    @Column(name = "notebooks_size")
-    private NotebooksSize notebooksSize;
+    @Column(name = "memory_size",nullable = false)
+    private int memorySize;
+
 }

@@ -1,4 +1,4 @@
-package com.example.computershop.enity.notebooks;
+package com.example.computershop.enity.notebook;
 
 public enum NotebooksSize {
     THIRTEEN(13),

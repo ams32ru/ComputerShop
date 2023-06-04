@@ -1,9 +1,6 @@
 package com.example.computershop.controller;
 
-import com.example.computershop.enity.monitors.Monitors;
-import com.example.computershop.enity.notebooks.Notebooks;
-import com.example.computershop.repository.NotebooksRepository;
-import com.example.computershop.service.MonitorsService;
+import com.example.computershop.enity.notebook.Notebooks;
 import com.example.computershop.service.NotebooksService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

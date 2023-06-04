@@ -1,6 +1,6 @@
 package com.example.computershop.service;
 
-import com.example.computershop.enity.notebooks.Notebooks;
+import com.example.computershop.enity.notebook.Notebooks;
 import com.example.computershop.repository.NotebooksRepository;
 import org.springframework.stereotype.Service;
 

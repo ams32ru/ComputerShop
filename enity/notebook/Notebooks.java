@@ -1,17 +1,17 @@
-package com.example.computershop.enity.monitors;
+package com.example.computershop.enity.notebook;
 
 import com.example.computershop.enity.AbstractEntityProduct;
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "Monitors")
+@Table(name = "Notebooks")
 @Data
-public class Monitors extends AbstractEntityProduct {
+public class Notebooks extends AbstractEntityProduct {
     @Id
     @GeneratedValue
     @Column(name = "id", nullable = false)
     private long id;
-    @Column(name = "diagonal", nullable = false)
-    private int diagonal;
+    @Column(name = "notebooks_size")
+    private NotebooksSize notebooksSize;
 }

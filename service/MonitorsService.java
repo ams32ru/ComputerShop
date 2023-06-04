@@ -1,6 +1,6 @@
 package com.example.computershop.service;
 
-import com.example.computershop.enity.monitors.Monitors;
+import com.example.computershop.enity.monitor.Monitors;
 import com.example.computershop.repository.MonitorsRepository;
 import org.springframework.stereotype.Service;
 

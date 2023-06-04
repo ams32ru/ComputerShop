@@ -1,6 +1,6 @@
 package com.example.computershop.service;
 
-import com.example.computershop.enity.harddisks.HardDisks;
+import com.example.computershop.enity.harddisk.HardDisks;
 import com.example.computershop.repository.HardDisksRepository;
 import org.springframework.stereotype.Service;
 
