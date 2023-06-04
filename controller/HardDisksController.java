@@ -10,10 +10,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-@RequestMapping(value = "/hardDisk",produces = "application/json")
+@RequestMapping(value = "/hardDisk", produces = "application/json")
 public class HardDisksController {
-    @Autowired
-    HardDisksService hardDisksService;
+    final HardDisksService hardDisksService;
+
+    public HardDisksController(HardDisksService hardDisksService) {
+        this.hardDisksService = hardDisksService;
+    }
 
     @PostMapping("/create-hard-disks")
     public HardDisks createHardDisks() {

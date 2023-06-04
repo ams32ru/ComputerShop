@@ -12,6 +12,9 @@ public class Notebooks extends AbstractEntityProduct {
     @GeneratedValue
     @Column(name = "id", nullable = false)
     private long id;
+    /**
+     * Диагональ ноутбука
+     */
     @Column(name = "notebooks_size")
     private NotebooksSize notebooksSize;
 }

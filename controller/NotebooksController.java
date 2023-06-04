@@ -10,10 +10,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-@RequestMapping(value = "/notebooks",produces = "application/json")
+@RequestMapping(value = "/notebooks", produces = "application/json")
 public class NotebooksController {
-    @Autowired
-    NotebooksService notebooksService;
+    final NotebooksService notebooksService;
+
+    public NotebooksController(NotebooksService notebooksService) {
+        this.notebooksService = notebooksService;
+    }
 
     @PostMapping("/create-notebooks")
     public Notebooks createNotebooks() {

@@ -1,5 +1,8 @@
 package com.example.computershop.enity.notebook;
 
+/**
+ * Возможные размеры для ноутбуков (диагональ)
+ */
 public enum NotebooksSize {
     THIRTEEN(13),
     FOURTEEN(14),

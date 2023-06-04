@@ -12,8 +12,11 @@ import java.util.Collection;
 @RestController
 @RequestMapping(value = "/monitors", produces = "application/json")
 public class MonitorsController {
-    @Autowired
-    MonitorsService monitorsService;
+    final MonitorsService monitorsService;
+
+    public MonitorsController(MonitorsService monitorsService) {
+        this.monitorsService = monitorsService;
+    }
 
     @PostMapping("/create-monitor")
     public Monitors createMonitors() {

@@ -12,6 +12,7 @@ public class Monitors extends AbstractEntityProduct {
     @GeneratedValue
     @Column(name = "id", nullable = false)
     private long id;
+
     @Column(name = "diagonal", nullable = false)
     private int diagonal;
 }

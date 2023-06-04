@@ -12,6 +12,7 @@ public class HardDisks extends AbstractEntityProduct {
     @GeneratedValue
     @Column(name = "id", nullable = false)
     private long id;
+
     @Column(name = "memory_size",nullable = false)
     private int memorySize;
 

@@ -3,6 +3,7 @@ package com.example.computershop.controller;
 import com.example.computershop.enity.desktopcomputer.DesktopComputers;
 import com.example.computershop.repository.DesktopComputersRepository;
 import com.example.computershop.service.DesktopComputersService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,8 +14,11 @@ import java.util.Collection;
 @RestController
 @RequestMapping(value = "/desktopComputers", produces = "application/json")
 public class DesktopComputersController {
-    @Autowired
-    DesktopComputersService computersService;
+    final DesktopComputersService computersService;
+
+    public DesktopComputersController(DesktopComputersService computersService) {
+        this.computersService = computersService;
+    }
 
     @PostMapping("/create-computer")
     public DesktopComputers createDesktopComputer() {
